@@ -47,6 +47,7 @@ class AlphaBetaAgent(Agent):
         """The successors function must return (or yield) a list of
         pairs (a, s) in which a is the action played to reach the
         state s;"""
+		self.self = state
         abstract
 
     def cutoff(self, state, depth):
